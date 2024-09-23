@@ -2,6 +2,7 @@ import { app, shell, BrowserWindow, ipcMain } from 'electron'
 import { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
+import { InstallSugarResourceProtocol } from './protocol-sugar-resource'
 
 function createWindow() {
   // Create the browser window.
@@ -39,6 +40,7 @@ function createWindow() {
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
 app.whenReady().then(() => {
+  InstallSugarResourceProtocol()
   // Set app user model id for windows
   electronApp.setAppUserModelId('com.electron')
 

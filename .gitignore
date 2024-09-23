@@ -12,3 +12,5 @@
 !.eslin*
 !.prettier*
 !README.md
+!assets
+!assets/**

@@ -12,6 +12,9 @@ asarUnpack:
   - resources/**
 win:
   executableName: sugar-scent-resources
+  extraFiles:
+    - from: ./archive/RESOURCE.PAK
+      to: ./resources/RESOURCE.PAK
 nsis:
   artifactName: ${name}-${version}-setup.${ext}
   shortcutName: ${productName}
