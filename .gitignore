@@ -1,0 +1,14 @@
+**
+!build
+!build/**
+!resources
+!resources/**
+!src
+!src/**
+!.gitignore
+!electron*
+!package.json
+!.edit*
+!.eslin*
+!.prettier*
+!README.md
